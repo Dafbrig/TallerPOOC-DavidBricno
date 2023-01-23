@@ -6,15 +6,27 @@ using System.Threading.Tasks;
 
 namespace Calendar
 {
-    internal class Day
+    internal class Day : Event
     {
-        private string _name;
-        private DateTime _startDate;
-        private DateTime _endDate;
-        public Day(string name, DateTime startDate, DateTime endDate) { 
-            _name = name;
-            _startDate = startDate;
-            _endDate = endDate;
+        private List<Event> Events;
+        private DateTime today;
+        public List<Event> showEvents(List<Event> Lista)
+        {
+            Events = new List<Event>();
+            today = DateTime.Now;
+            foreach (Event e in Lista)
+            {
+                if (e.StartDate.DayOfYear == today.DayOfYear && e.StartDate.Year == today.Year)
+                {
+                    Events.Add(e);
+                }
+            }
+            return Events;
         }
+        public Day()
+        {
+
+        }
+
     }
 }
