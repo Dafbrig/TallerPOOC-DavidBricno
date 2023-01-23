@@ -23,10 +23,13 @@ namespace Calendar
             }
             return Events;
         }
-        public Day()
+        public Day (string name, DateTime startDate, DateTime endDate) : base (name, startDate, endDate)
         {
 
         }
 
+        public Day()
+        {
+        }
     }
 }
