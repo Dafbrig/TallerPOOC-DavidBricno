@@ -14,7 +14,6 @@ static class Program{
         string name;
         //Fecha inicio del calendario
         DateTime startDate;
-        //Fecha Final del calendario
         DateTime endDate;
         int daystart;
         int dayend;
