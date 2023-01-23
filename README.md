@@ -13,6 +13,3 @@
 # Importante
 - Debes realizar un Fork del repositorio Link[https://github.com/training-practice-sofkau/TallerPOOC-.git]
 - La entrega se debe realizar a traves de un Pull Requests 
-
-
-
